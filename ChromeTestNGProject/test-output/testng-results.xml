@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="amazon_suites" duration-ms="44924" started-at="2019-09-07T18:15:03Z" finished-at="2019-09-07T18:15:48Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="loginclass.titlecheck()[pri:0, instance:login_module.loginclass@a3d8174]" name="titlecheck" class="login_module.loginclass"/>
+        <method signature="loginclass.nxtmtd()[pri:0, instance:login_module.loginclass@a3d8174]" name="nxtmtd" class="login_module.loginclass"/>
+        <method signature="loginclass.loginmethod()[pri:0, instance:login_module.loginclass@a3d8174]" name="loginmethod" class="login_module.loginclass"/>
+        <method signature="parametersExe.maillog(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:login_module.parametersExe@5f9b2141]" name="maillog" class="login_module.parametersExe"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Tc_login_module" duration-ms="15503" started-at="2019-09-07T18:15:03Z" finished-at="2019-09-07T18:15:19Z">
+      <class name="login_module.loginclass">
+        <test-method status="FAIL" signature="titlecheck()[pri:0, instance:login_module.loginclass@a3d8174]" name="titlecheck" duration-ms="28" started-at="2019-09-07T23:45:03Z" finished-at="2019-09-07T23:45:03Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at login_module.loginclass.titlecheck(loginclass.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titlecheck -->
+        <test-method status="PASS" signature="loginmethod()[pri:0, instance:login_module.loginclass@a3d8174]" name="loginmethod" duration-ms="15452" started-at="2019-09-07T23:45:03Z" finished-at="2019-09-07T23:45:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginmethod -->
+        <test-method status="SKIP" signature="nxtmtd()[pri:0, instance:login_module.loginclass@a3d8174]" name="nxtmtd" duration-ms="0" started-at="2019-09-07T23:45:19Z" depends-on-methods="login_module.loginclass.titlecheck" finished-at="2019-09-07T23:45:19Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method loginclass.nxtmtd()[pri:0, instance:login_module.loginclass@a3d8174] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method loginclass.nxtmtd()[pri:0, instance:login_module.loginclass@a3d8174] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nxtmtd -->
+      </class> <!-- login_module.loginclass -->
+    </test> <!-- Tc_login_module -->
+    <test name="Tc_sendmail_module" duration-ms="29324" started-at="2019-09-07T18:15:19Z" finished-at="2019-09-07T18:15:48Z">
+      <class name="login_module.parametersExe">
+        <test-method status="PASS" signature="maillog(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:login_module.parametersExe@5f9b2141]" name="maillog" duration-ms="29317" started-at="2019-09-07T23:45:19Z" finished-at="2019-09-07T23:45:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://amazon.in]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rama.tulluri96@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ramaamazon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maillog -->
+      </class> <!-- login_module.parametersExe -->
+    </test> <!-- Tc_sendmail_module -->
+  </suite> <!-- amazon_suites -->
+</testng-results>

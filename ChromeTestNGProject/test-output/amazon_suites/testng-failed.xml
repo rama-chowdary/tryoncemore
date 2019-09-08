@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [amazon_suites]">
+  <parameter name="pwdtxt" value="ramaamazon"/>
+  <parameter name="mailid" value="rama.tulluri96@gmail.com"/>
+  <parameter name="expectedtitle" value="Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"/>
+  <parameter name="url" value="http://amazon.in"/>
+  <test name="Tc_login_module(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="login_module.loginclass">
+        <methods>
+          <include name="titlecheck"/>
+          <include name="nxtmtd"/>
+        </methods>
+      </class> <!-- login_module.loginclass -->
+    </classes>
+  </test> <!-- Tc_login_module(failed) -->
+</suite> <!-- Failed suite [amazon_suites] -->

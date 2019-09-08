@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="amazon_suites">
+<groups>
+<run>
+<include name ="Smoke"/>
+</run>
+</groups>
+
+  <test thread-count="5" name="Tc_login_module">
+  <classes>
+  <class name="login_module.loginclass"/>
+  </classes>
+  </test> <!-- Tc_login_module -->
+  
+   <test thread-count="5" name="Tc_sendmail_module">
+  <classes>
+  <parameter name='url' value="http://amazon.in"></parameter>
+  <parameter name='expectedtitle' value='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in'></parameter>
+  <parameter name='mailid' value="rama.tulluri96@gmail.com"></parameter>
+  <parameter name='pwdtxt' value="ramaamazon"></parameter>
+  <class name="login_module.parametersExe"/>
+  </classes>
+  </test> <!-- Tc_login_module -->
+</suite> <!-- amazon_suites -->
