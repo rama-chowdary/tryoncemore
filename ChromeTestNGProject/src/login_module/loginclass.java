@@ -26,7 +26,7 @@ public class loginclass {
   @Test (groups = "Smoke")
   public void titlecheck() {
 	  
-	  String actualtitle = driverobj.getTitle();
+	  String actualtitles = driverobj.getTitle();
 	  String expectedtitle = "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in";
 	  Assert.assertEquals(actualtitle, expectedtitle);
 	  
